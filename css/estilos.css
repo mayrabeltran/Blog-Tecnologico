@@ -14,3 +14,107 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/***ASIDE***/
+
+.posts {
+    width: 40%;
+    /* background-color: red;*/
+}
+
+.posts h2 {
+    font-size: 1.5rem;
+    color: var(--colorSubtitulo);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.post {
+    /* background-color: blue;*/
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.post img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--colorSubtitulo);
+}
+
+.formulario {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.formulario h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--colorTitulo);
+    margin-bottom: 17px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    background-image: url(../img/lines.png);
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+input[type="password"] {
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: var(--colorTitulo);
+    height: 40px;
+    width: 100%;
+}
+
+
+/*RESPONSIVE CUERPO DE LA PÁGINA*/
+
+@media (max-width:992px) {
+    h1 {
+        margin-bottom: 1.5rem;
+    }
+    .articulos {
+        width: 65%;
+    }
+    .posts {
+        width: 35%;
+    }
+    .post {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .formulario {
+        margin-right: 0;
+        width: 80%;
+    }
+}
+
+@media (max-width:768px) {
+    .contenido {
+        flex-direction: column;
+    }
+}
