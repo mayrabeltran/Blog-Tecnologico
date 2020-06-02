@@ -14,3 +14,153 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/**** Header ***/
+
+.header {
+    width: 85%;
+    padding: 20px;
+}
+
+.imgHeader {
+    width: 100%;
+}
+
+
+/*** Navegación ***/
+
+.barra-navegacion {
+    width: 100%;
+    height: 55px;
+    background-color: var(--fondoBarra);
+    margin-bottom: 25px;
+}
+
+.contenedor-navegacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 270px;
+    height: 25px;
+}
+
+.navegacion {
+    height: 55px;
+    flex: 0 0 50%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item {
+    list-style: none;
+    flex: 0 0 25%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item a {
+    color: var(--colorBoton);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+
+/*   RESPONSIVE-HEADER   */
+
+
+/*  469px  -  768px*/
+
+@media (max-width:768px) {
+    .header {
+        width: 100%;
+        padding: 0;
+    }
+    .barra-navegacion {
+        height: auto;
+    }
+    .contenedor-navegacion {
+        flex-direction: column;
+    }
+    .logo {
+        justify-content: center;
+    }
+}
+
+
+/* 0 - 468px*/
+
+@media (max-width:468px) {
+    .menu {
+        flex-direction: column;
+    }
+    .item {
+        /*margin-bottom: 10px;*/
+    }
+    .item a {
+        height: 35px;
+    }
+}
+
+
+/**********CUERPO DE LA PÁGINA******************/
+
+h1 {
+    font-size: 2.2rem;
+    color: var(--colorTitulo);
+    text-align: center;
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articulos {
+    width: 60%;
+}
+
+.articulo {
+    margin-bottom: 25px;
+}
+
+.articulo h3 {
+    font-size: 1.5rem;
+    color: var(--colorSubtitulo);
+    margin-bottom: 15px;
+}
+
+.articulo img {
+    width: 300px;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 5px;
+}
+
+.articulo p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.boton {
+    padding: 7px 25px;
+    background-color: var(--fondoBarra);
+    color: var(--colorBoton);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 7px;
+}
